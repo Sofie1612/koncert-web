@@ -68,3 +68,34 @@ p{
     border-bottom: none;
 }
 
+
+body {
+font-family: inherit;
+}
+
+h3{
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    margin: 20 px;
+}
+
+text{
+    color: black;
+}
+
+.seznam{
+    display:flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.radek{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.radek h3,
+.radek p{
+    margin: 0
+}

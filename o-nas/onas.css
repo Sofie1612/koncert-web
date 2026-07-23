@@ -34,32 +34,32 @@ h1 {
 }
 
 .uvod {
-    max-width: 600px;
+    max-width: 1140px;
     margin-bottom: 35px;
     padding: 25px;
-    height: 250px;
+    height: 190px;
+    justify-content: center;
+    width: 1035px;
 
 
     border-radius: 50px;
     background-color: rgb(0 0 0 / 35%);
     backdrop-filter: blur(6px);
+    margin: auto;
 }
 
 .content {
     max-width: 1100px;
     margin: 0 auto;
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
-    align-items: center;
     display: flex;
     gap: 30px;
 }
 
 .skupina-clenek {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 
     justify-content: center;
     align-items: stretch;
@@ -67,11 +67,12 @@ h1 {
     gap: 24px;
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .skupina-clenek > .clenky {
-    flex: 0 1 calc((100% - 48px) / 3);
+    display: flex;
+    flex-direction: row;
     min-width: 0;
 
     padding: 24px;
@@ -80,8 +81,8 @@ h1 {
     background-color: rgb(0 0 0 / 40%);
     box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
     backdrop-filter: blur(7px);
+    flex-basis: 30%;
 }
-
 
 .clenka {
     height: 100%;

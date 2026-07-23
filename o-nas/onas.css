@@ -1,0 +1,113 @@
+/* Základní nastavení */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+
+    /* Barevné pozadí */
+    background-image: url("./barevny-mix.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    padding: 40px;
+}
+
+h1 {
+    margin: 0 0 35px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 2px 8px rgb(0 0 0 / 50%);
+}
+
+.uvod {
+    max-width: 600px;
+    margin-bottom: 35px;
+    padding: 25px;
+    height: 250px;
+
+
+    border-radius: 50px;
+    background-color: rgb(0 0 0 / 35%);
+    backdrop-filter: blur(6px);
+}
+
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.skupina-clenek {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 24px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skupina-clenek > .clenky {
+    flex: 0 1 calc((100% - 48px) / 3);
+    min-width: 0;
+
+    padding: 24px;
+    border: 1px solid rgb(255 255 255 / 40%);
+    border-radius: 16px;
+    background-color: rgb(0 0 0 / 40%);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
+    backdrop-filter: blur(7px);
+}
+
+
+.clenka {
+    height: 100%;
+}
+
+.clenka h2 {
+    margin: 0 0 12px;
+    color: white;
+    font-size: 26px;
+}
+
+.clenka p {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer */
+#footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgb(0 0 0 / 25%);
+}
+
+#footer p {
+    margin: 0;
+}

@@ -1,18 +1,12 @@
 body {
-  min-height: 100vh;
-  margin: 0;
-  color: #000;
-  background: linear-gradient(
-    135deg,
-    #ff0000,
-    #ff1493,
-    #ff00ff,
-    #00ffd5,
-    #ff8c00
-  );
-  background-attachment: fixed;
+  background-image: url("https://i.postimg.cc/WpfRtbWQ/1ea021e6-d1d0-4e69-8441-0c873a39af6d.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
+
+
 
 h1{
     font-size: 60px;
@@ -22,15 +16,16 @@ h1{
 
 h2{
     font-size: 40px;
-    font-style: inherit;
-    margin: 20px;
+    font-style: initial;
+    margin: 60px;
+    margin-top: 64px;
+    margin-bottom: -20px;
 }
 
 p{
     font-family: Arial, sans-serif;
     font-size: 22px;
-    justify-content: space-around;
-    margin: 20px;
+    margin: 60px;
 }
 
 .table-container {
@@ -45,32 +40,47 @@ p{
     -webkit-backdrop-filter: blur(8px);
 
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.509);
 }
 
 .table {
     width: 100%;
     table-layout: fixed;
-    border-collapse: collapse;
-    font-size: 25px;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    font-size: 23px;
     color: #000;
-    background: transparent;
 }
 
-.table th,
 .table td {
     padding: 15px 10px;
     text-align: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
 }
 
-.table tr:last-child td {
-    border-bottom: none;
+.table th {
+    font-style: initial;
+    font-weight: bold;
+    font-size: 28px;
 }
 
+.table tbody tr:hover td {
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+/* Levé rohy řádku */
+.table tbody tr td:first-child {
+    border-radius: 15px 0 0 15px;
+}
+
+/* Pravé rohy řádku */
+.table tbody tr td:last-child {
+    border-radius: 0 15px 15px 0;
+}
 
 body {
-font-family: inherit;
+font-style: initial;
 }
 
 h3{
@@ -80,22 +90,40 @@ h3{
 }
 
 text{
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
-.seznam{
-    display:flex;
-    flex-direction: column;
-    gap: 20px
-}
 
-.radek{
+.radek {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
+    margin: 60px;
 }
 
 .radek h3,
-.radek p{
-    margin: 0
+.radek p {
+    margin: 0;
+}
+
+.tlacitko {
+  padding: 20px 20px;
+  border-radius: 999px;
+  border: none;
+  background-color: #ffffffb0;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.toursagain{
+    gap: 90px;
+}
+
+
+
+.tlacitko:hover {
+  background-color: rgb(255, 255, 255);
 }
